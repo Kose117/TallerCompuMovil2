@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TallerCompuMovil2</string>
+    <string name="botonGaleria">Galeria</string>
+    <string name="botonCamara">Camara</string>
+    <string name="title_activity_mapa">MapaActivity</string>
+    <string name="hintDireccion">Ingrese una direccion</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="latitude_label">Latitud</string>
+    <string name="longitude_label">Longitud</string>
+    <string name="altitude_label">Altitud</string>
+
+
+
+</resources>
