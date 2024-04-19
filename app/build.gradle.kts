@@ -1,3 +1,4 @@
+import java.util.Properties
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -58,5 +59,14 @@ dependencies {
     implementation(libs.circleimageview)
     implementation("com.google.android.gms:play-services-maps")
     implementation("com.google.android.gms:play-services-location")
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation ("com.google.code.gson:gson:2.8.6")
+    implementation ("com.github.MKergall:osmbonuspack:6.6.0")
+
+
+
+
+
+
 
 }

@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding="15dp"
-    android:id="@+id/activityMap"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
-    <EditText android:id="@+id/texto"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:hint="@string/hintDireccion"/>
-
+    <!-- Map Fragment -->
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        tools:context=".MapaActivity" />
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
 
-    <TextView
-        android:id="@+id/latitude"
+    <!-- SearchView -->
+    <SearchView
+        android:id="@+id/buscador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="latitude" />
+        android:layout_gravity="top"
+        android:hint="@string/hintDireccion"
+        android:layout_margin="15dp"
+        android:background="@drawable/texto"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="@string/hintDireccion"
+    />
 
-    <TextView
-        android:id="@+id/longitude"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="longitude" />
 
-    <TextView
-        android:id="@+id/altitude"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="altitude" />
-</LinearLayout>
+
+</RelativeLayout>

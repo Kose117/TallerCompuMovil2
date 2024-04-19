@@ -49,14 +49,20 @@ class ContactosActivity : AppCompatActivity() {
 
     fun updateUI(contacts : Boolean){
         if(contacts){
-            //Permission Granted
             val cursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI, projection, null, null, null)
-            adapter.changeCursor(cursor)
+            if (cursor != null) {
+                adapter.swapCursor(cursor) // Use swapCursor here
+            } else {
+                Toast.makeText(this, "Failed to load contacts", Toast.LENGTH_SHORT).show()
+            }
         } else {
-            //Permission Denied
-            adapter.changeCursor(null) // Limpiar el cursor si se deniegan los permisos
+            // Permission Denied
+            Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show()
+            adapter.clear()
         }
     }
+
+
 
 
 

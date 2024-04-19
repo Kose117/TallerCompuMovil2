@@ -3,11 +3,9 @@
     <string name="botonGaleria">Galeria</string>
     <string name="botonCamara">Camara</string>
     <string name="title_activity_mapa">MapaActivity</string>
-    <string name="hintDireccion">Ingrese una direccion</string>
+    <string name="hintDireccion">Buscar ubicación</string>
     <string name="title_activity_maps">MapsActivity</string>
-    <string name="latitude_label">Latitud</string>
-    <string name="longitude_label">Longitud</string>
-    <string name="altitude_label">Altitud</string>
+    <string name="mapquest_api_key">AIzaSyBbGE3udkS78nvyZ1Ei_nSWLKp3129NRP0</string>
 
 
 
