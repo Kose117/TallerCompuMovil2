@@ -9,13 +9,13 @@
               <type value="RUNNING_DEVICE_TARGET" />
               <deviceKey>
                 <Key>
-                  <type value="SERIAL_NUMBER" />
-                  <value value="ZY322RBV3T" />
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\Jose\.android\avd\Pixel_8_Pro_API_UpsideDownCakePrivacySandbox.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </runningDeviceTargetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-04-19T01:05:04.391018700Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-04-22T05:54:35.013084800Z" />
         </State>
       </entry>
     </value>
